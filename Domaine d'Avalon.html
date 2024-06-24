@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<html lang="fr">
+		<br>
+		<title>Domaine d'Avalon</title>	
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="bootstrap/font_awesome/css/font-awesome.css">
+	</head>
+	<body class="header">
+	
+		<section >
+		<nav>
+			<a href="site.html"><img src="logo.png" height="200" width="215"></a>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-close" onclick="HideMenu()"></i>
+				<ul>
+					<li><a href=""><strong>HOME</strong></a></li>
+					<li><a href=""><strong>ABOUT</strong></a></li>
+					<li><a href=""><strong>CONTACT</strong></a></li>
+					
+				</ul>
+			</div>
+			<i class="fa fa-compass" onclick="ShowMenu()"></i>
+		</nav>
+	
+	<div class="text-box">
+	<h1> Domaine d'Avalon</h1>
+	<p>...</p>
+	<a href="" class="hero-btn">Visit us to know more</a>
+	</div>
+
+	</section>
+
+<!-----------Javascript for toggle----------->
+	<script>
+
+		var navLinks=document.getElementById("navLinks");
+		function ShowMenu () {
+			navLinks.style.right="0";
+		}
+		
+		function HideMenu () {
+			navLinks.style.right="-200px";
+		}
+	</script>
+
+	</body>
+	</html>
+
+
